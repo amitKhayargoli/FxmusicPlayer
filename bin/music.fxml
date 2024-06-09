@@ -54,12 +54,12 @@
                   <Image url="@Home.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="playlistButton" fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="116.0" onMouseClicked="#showPlaylistPanel" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Playlist.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="playing" fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="129.0" onMouseClicked="#showTrack" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Music.png" />
                </image>
@@ -91,7 +91,7 @@
             <Image url="@Room_Under_the_Stairs.jpg" />
          </image>
       </ImageView>
-      <VBox layoutX="439.0" layoutY="82.0" prefHeight="346.0" prefWidth="305.0">
+      <VBox fx:id="playlistPanel" layoutX="439.0" layoutY="82.0" prefHeight="346.0" prefWidth="305.0" visible="false">
          <children>
             <HBox alignment="BOTTOM_LEFT" prefHeight="33.0" prefWidth="306.0" spacing="24.0">
                <children>
@@ -209,5 +209,24 @@
             <Font name="Century Gothic Bold" size="22.0" />
          </font>
       </Label>
+      <VBox fx:id="nowPlayingPanel" layoutX="460.0" layoutY="89.0" prefHeight="338.0" prefWidth="284.0" visible="false">
+         <children>
+            <Label prefHeight="70.0" prefWidth="252.0" text="Now Playing" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="trackName" prefHeight="60.0" prefWidth="282.0" text="Dreamin" textFill="WHITE">
+               <font>
+                  <Font name="Colonna MT" size="39.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="158.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../src/pepo-wiggle.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
