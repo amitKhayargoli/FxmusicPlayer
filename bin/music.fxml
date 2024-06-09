@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -39,12 +39,12 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="245.0" layoutY="21.0" prefHeight="11.0" prefWidth="412.0" progress="0.0" />
             <ImageView fx:id="playButton" fitHeight="20.0" fitWidth="30.0" layoutX="75.0" layoutY="19.0" onMouseClicked="#playMusic" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Play1.png" />
                </image>
             </ImageView>
+            <Slider layoutX="248.0" layoutY="20.0" prefHeight="14.0" prefWidth="414.0" />
          </children>
       </AnchorPane>
       <VBox alignment="CENTER" layoutY="124.0" prefHeight="238.0" prefWidth="41.0" spacing="20.0" styleClass="Menu-bar-background" stylesheets="@style.css">
