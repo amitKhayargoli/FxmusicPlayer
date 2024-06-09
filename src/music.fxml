@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="757.0" styleClass="anchor-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="428.0" prefHeight="54.0" prefWidth="763.0" styleClass="bottom-panel" stylesheets="@style.css">
+         <children>
+            <ImageView fx:id="previous" fitHeight="32.0" fitWidth="42.0" layoutX="25.0" layoutY="13.0" onMouseClicked="#previous" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@previous.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next" fitHeight="32.0" fitWidth="42.0" layoutX="109.0" layoutY="13.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@next.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pause" fitHeight="32.0" fitWidth="42.0" layoutX="69.0" layoutY="13.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pause.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="196.0" layoutY="19.0" text="0:00" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="678.0" layoutY="17.0" text="3:32" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ProgressBar layoutX="245.0" layoutY="21.0" prefHeight="11.0" prefWidth="412.0" progress="0.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="CENTER" layoutY="124.0" prefHeight="238.0" prefWidth="41.0" spacing="20.0" styleClass="Menu-bar-background" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Playlist.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Music.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="34.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logout.png" />
+               </image>
+            </ImageView>
+            
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="235.0" layoutY="23.0" prefHeight="38.0" prefWidth="290.0" spacing="25.0" styleClass="search-background" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Search.png" />
+               </image>
+            </ImageView>
+            <TextField prefHeight="28.0" prefWidth="178.0" promptText="Search for Artists,Albums,Playlists" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Book Antiqua" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ImageView fitHeight="158.0" fitWidth="163.0" layoutX="161.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Room_Under_the_Stairs.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="439.0" layoutY="82.0" prefHeight="346.0" prefWidth="305.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="33.0" prefWidth="306.0" spacing="24.0">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="96.0" text="Zayn" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="15 songs" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="song1" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#playsong1" prefHeight="50.0" prefWidth="230.0" spacing="20.0" styleClass="play" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Play1.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="98.0" text="Dreamin" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="3:32" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="230.0" spacing="20.0" styleClass="playlist" stylesheets="@style.css">
+               <children>
+                  <Label text="2" textFill="#efefef">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="98.0" text="What I am" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="3:31" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="111.0" prefHeight="50.0" prefWidth="230.0" spacing="20.0" styleClass="playlist" stylesheets="@style.css">
+               <children>
+                  <Label text="3" textFill="#efefef">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="98.0" text="Grateful" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="3:22" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="161.0" prefHeight="50.0" prefWidth="230.0" spacing="20.0" styleClass="playlist" stylesheets="@style.css">
+               <children>
+                  <Label text="4" textFill="#efefef">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="98.0" text="Alienated" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="4:07" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="212.0" prefHeight="50.0" prefWidth="230.0" spacing="20.0" styleClass="playlist" stylesheets="@style.css">
+               <children>
+                  <Label text="5" textFill="#efefef">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="98.0" text=" My Woman" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" text="3:42" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="161.0" layoutY="335.0" prefHeight="54.0" prefWidth="299.0" text="ROOM UNDER THE STAIRS" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
